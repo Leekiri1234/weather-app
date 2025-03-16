@@ -1,0 +1,119 @@
+.navbar-brand {
+    color: #191616;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input {
+    background-color: #607D8B;
+    padding: 24px 0px 12px 0px;
+    width: 80%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #CFD8DC;
+    font-size: 16px;
+    color: #fff;
+}
+
+input:focus {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid #fff;
+    outline-width: 0;
+    font-weight: 400;
+}
+
+::placeholder {
+    color: #B0BEC5;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #B0BEC5;
+}
+
+::-ms-input-placeholder {
+    color: #B0BEC5;
+}
+
+.fa-search {
+    color: #607D8B;
+    background-color: #E1F5FE;
+    font-size: 20px;
+    padding: 20px;
+    width: 20%;
+    cursor: pointer;
+}
+
+.light-text {
+    color: #B0BEC5;
+}
+
+.fa-sun-o {
+    font-size: 22px;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-results {
+    margin-top: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.list-group-item {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.selected-location {
+    text-align: center;
+    font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .search-container {
+        max-width: 100%;
+    }
+    
+    .mobile-search-form {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .mobile-search-toggler {
+        display: block !important;
+    }
+}

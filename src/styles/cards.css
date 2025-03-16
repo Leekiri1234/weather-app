@@ -1,0 +1,74 @@
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.weather-card {
+    margin-top: 1rem;
+}
+
+.forecast-card {
+    margin-bottom: 2rem;
+}
+
+.detail-item {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.detail-item:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: scale(1.03);
+}
+
+.line {
+    border-bottom: 1px solid #e0e0e0;
+    margin: 10px 0;
+}
+
+@media (max-width: 991.98px) {
+    .glass-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .glass-card {
+        padding: 1rem;
+    }
+    
+    .glass-card:hover {
+        transform: none;
+    }
+    
+    .detail-item:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .glass-card {
+        padding: 0.75rem;
+        border-radius: 12px;
+    }
+    
+    .weather-card {
+        margin-top: 0.5rem;
+    }
+    
+    .forecast-card {
+        margin-bottom: 1rem;
+    }
+}

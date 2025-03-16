@@ -1,0 +1,44 @@
+/*Mobile*/
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .weather-card {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .weather-details {
+    flex-direction: column;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+}
+
+/*Tablets*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .weather-card {
+    margin: 15px;
+    width: calc(50% - 30px);
+  }
+}
+
+/*Laptop*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 85%;
+  }
+
+  .weather-card {
+    width: calc(33.33% - 30px);
+  }
+}

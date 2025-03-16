@@ -1,0 +1,108 @@
+.weather-details-container {
+    position: fixed;
+    top: 0;
+    right: -30vw;
+    height: 100vh;
+    width: 30vw;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 30px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+}
+
+.weather-details-container.open {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.weather-details-container .row {
+    margin-bottom: 8px;
+}
+
+.weather-details-container .light-text {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.weather-details-container .ml-auto {
+    margin-left: auto;
+}
+
+.large-font {
+    font-size: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.toggle-button {
+    position: static;
+    transform: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: rgba(33, 150, 243, 0.1);
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    writing-mode: horizontal-tb;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.toggle-button:hover {
+    background: rgba(33, 150, 243, 0.2);
+}
+
+.toggle-button .icon {
+    transform: none;
+    margin: 0;
+}
+
+.card0 .toggle-button.open {
+    right: 50vw;
+}
+
+/* Media Queries */
+@media (max-width: 991.98px) {
+    .weather-details-container {
+        width: 40vw;
+        right: -40vw;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .weather-details-container {
+        width: 100vw;
+        right: -100vw;
+        padding: 15px;
+    }
+    
+    .large-font {
+        font-size: 50px;
+    }
+    
+    .weather-details-container .detail-item {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .weather-details-container {
+        padding: 10px;
+    }
+    
+    .large-font {
+        font-size: 40px;
+    }
+}

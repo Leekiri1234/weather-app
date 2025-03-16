@@ -1,0 +1,76 @@
+body {
+    color: #fff;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #5ea3fa, #4361ee);
+    background-attachment: fixed;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.backdrop-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://source.unsplash.com/random/1920x1080/?sky,clouds') no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.location-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
+}
+
+@media (max-width: 767.98px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1, .h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2, .h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3, .h3 {
+        font-size: 1.3rem;
+    }
+    
+    h4, .h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (hover: none) {
+    .btn:hover, .time-badge:hover, .glass-card:hover, .detail-item:hover {
+        transform: none !important;
+    }
+    
+    .btn:active, .time-badge:active {
+        transform: scale(0.97);
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    input,
+    select,
+    textarea {
+        font-size: 16px !important;
+    }
+}
